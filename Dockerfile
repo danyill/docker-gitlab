@@ -1,5 +1,5 @@
-FROM sameersbn/ubuntu:14.04.20161014
-MAINTAINER sameer@damagehead.com
+FROM git://github.com/danyill/docker-ubuntu.git
+MAINTAINER dan.mulholland@gmail.com
 
 ENV GITLAB_VERSION=8.13.3 \
     RUBY_VERSION=2.3 \

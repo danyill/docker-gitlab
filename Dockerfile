@@ -43,7 +43,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv E1DD270288B4E60
 
 RUN pip install setuptools
 
-RUN git clone https://github.com/danyill/acme-nginx -o /home/acme-nginx
+RUN git clone https://github.com/danyill/acme-nginx /home/acme-nginx
 RUN python /home/acme-nginx/setup.py install
 
 COPY assets/build/ ${GITLAB_BUILD_DIR}/
